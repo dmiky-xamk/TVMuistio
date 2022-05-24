@@ -1,0 +1,13 @@
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 0;
+  gap: 2.4rem;
+  margin: 4.2rem 0;
+}
+
+.movies-error {
+  font-size: 3.4rem;
+  color: var(--color-error);
+}

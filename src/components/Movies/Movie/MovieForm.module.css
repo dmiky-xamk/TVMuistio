@@ -1,0 +1,108 @@
+.movie-form {
+  display: grid;
+  gap: 1.2rem 4rem;
+  grid-template-areas:
+    "name name"
+    "movie series"
+    "submit submit";
+}
+
+/* 
+  ==================
+  NAME LABEL AND INPUT FIELD
+  ==================
+  */
+
+.name {
+  grid-area: name;
+  justify-self: center;
+  width: 30%;
+}
+
+.name label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.name input {
+  width: 100%;
+  align-self: center;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.6rem;
+  padding: 0.8rem 2rem;
+  background-color: #ddd;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.name input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--color-primary-blue);
+}
+
+/* 
+  ==================
+  CHECKBOXES AND LABELS
+  ==================
+  */
+
+.movie {
+  grid-area: movie;
+  justify-self: end;
+}
+
+.series {
+  grid-area: series;
+}
+
+.movie input,
+.series input {
+  margin-right: 0.6rem;
+  transform: scale(1.2);
+}
+
+.movie label,
+.series label,
+.movie input,
+.series input {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+/* 
+  ==================
+  SUBMIT BUTTON
+  ==================
+  */
+
+.submit {
+  grid-area: submit;
+  justify-self: center;
+  margin-top: 0.4rem;
+}
+
+.submit input {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-primary-blue);
+  transition: all 0.3s;
+}
+
+.submit input:hover {
+  background-color: var(--color-primary-shade);
+}
+
+.submit input:active {
+  background-color: var(--color-primary-button-active);
+}

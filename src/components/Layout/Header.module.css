@@ -1,0 +1,20 @@
+.header {
+  padding: 2.4rem 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 4.2rem;
+}
+
+.headings {
+  margin-bottom: 4.2rem;
+}
+
+.heading-primary {
+  font-size: 4.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}

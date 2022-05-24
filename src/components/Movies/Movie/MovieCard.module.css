@@ -1,0 +1,43 @@
+.card--flex {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.4rem 1.4rem 2rem;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--color-grey-light);
+}
+
+.favorite {
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 2em;
+  color: var(--color-grey-light);
+  transition: all 0.3s;
+}
+
+.favorite:hover {
+  color: var(--color-grey-dark);
+}
